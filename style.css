@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Reka;
+  src: url(./fonts/REKA.otf);
+}
+
+h1 {
+  text-align: center;
+  font-family: Reka;
+}
+.nav {
+  text-align: center;
+  font-family: Reka;
+  float: right;
+  overflow: hidden;
+  background-color: rgb(252, 71, 102);
+}
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover {
+  background-color: coral;
+  color: black;
+}
+.nav a.active {
+  background-color: coral;
+  color: white;
+}
+
+/* CSS OF TABLE */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+th {
+  font-size: 20px;
+  /* border: 1px solid black; */
+  background-color: rgb(20, 190, 148);
+  color: white;
+  padding: 8px;
+}
+td {
+  /* border: 1px solid black; */
+  font-size: 18px;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(odd) {
+  background-color: #c7bebe;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.btn {
+  background-color: rgb(143, 8, 98);
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 280px;
+}
+input {
+  width: 50%;
+  margin-left: 170px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+label {
+  margin-left: 170px;
+  font-size: 20px;
+}
+.button {
+  background-color: rgb(143, 8, 98);
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  opacity: 0.9;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 270px;
+  margin-top: 10px;
+}
+option {
+  font-size: 15px;
+}
+select {
+  width: 57%;
+  margin-left: 170px;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
