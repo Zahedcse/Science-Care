@@ -19,10 +19,16 @@
     <!-- End Nav Bar -->
 
 
+    <?php
+                $conn = mysqli_connect('localhost', 'root', '', 'studentcare');
+                $sql = "SELECT * FROM students INNER JOIN course ON course.c_trainer = students.s_id
+                INNER JOIN trainer ON trainer.t_id = students.s_trainer";
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    ?>
 
 
-
-    <table>
+    <table >
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -36,16 +42,9 @@
         </tr>
 
         <tbody>
-            <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'studentcare');
-                $sql = "SELECT * FROM students INNER JOIN course ON course.c_trainer = students.s_id
-                INNER JOIN trainer ON trainer.t_id = students.s_trainer";
-                $result = mysqli_query($conn, $sql);
-                while ($data = mysqli_fetch_assoc($result)) {
-                    ?>
+            <?php while ($data = mysqli_fetch_assoc($result)) {
+                        ?>
             <tr>
-
-
                 <td><?php echo $data['s_id']; ?>
                 </td>
                 <td><?php echo $data['s_name']; ?>
@@ -69,9 +68,11 @@
 
             </tr>
             <?php
-                }?>
+                    } ?>
         </tbody>
     </table>
+    <?php
+                }?>
 
 </body>
 

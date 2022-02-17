@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <!-- Nav Bar -->
 
     <?php include('nav.php') ?>
@@ -21,7 +19,7 @@
 
     <?php
             $conn = mysqli_connect('localhost', 'root', '', 'studentcare');
-            $sql = "SELECT * FROM course INNER JOIN trainer ON course.c_trainer = trainer.t_id";
+            $sql = "SELECT * FROM course INNER JOIN trainer ON course.c_trainer = trainer.t_id  order by c_id asc";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
                 ?>

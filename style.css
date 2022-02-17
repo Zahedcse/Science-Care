@@ -8,9 +8,12 @@ h1 {
   font-family: Reka;
 }
 .nav {
-  text-align: center;
-  font-family: Reka;
-  float: right;
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  /* text-align: center; */
+  /* font-family: Reka; */
   overflow: hidden;
   background-color: rgb(252, 71, 102);
 }
@@ -77,8 +80,10 @@ tr:nth-child(even) {
   border-radius: 5px;
   background-color: white;
   padding: 20px;
-  margin-top: 20px;
+  /* margin-top: 80px; */
   margin-left: 280px;
+  position: absolute;
+  top: 80px;
 }
 input {
   width: 50%;

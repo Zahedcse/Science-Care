@@ -5,5 +5,4 @@
      <a href="alltrainer.php">All Trainer</a>
      <a href="addcourse.php">Add Course</a>
      <a href="allcourse.php">All Courses</a>
-
    </div>
